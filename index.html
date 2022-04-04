@@ -18,8 +18,8 @@
                         <!-- SEZIONE PROFILO -->
                         <div class="d-flex justify-content-between p-3 bg-gray-custom">
                             <div class="d-flex align-items-center">
-                                <img class="profilo me-2" src="./img/avatar_io.jpg" alt="">
-                                <span class="fs-4">Stefano</span>
+                                <img class="profilo me-2" :src="`./img/avatar${profilo.avatar}.jpg`" alt="">
+                                <span class="fs-4">{{profilo.name}}</span>
                             </div>
                             <div class="d-flex align-items-center fs-5">
                                 <i class="fa-solid fa-circle-notch me-3"></i>
@@ -46,12 +46,12 @@
                         </div>
                         <!-- SEZIONE CONTATTI -->
                         <div class=" overflow h-100">
-                            <div class="d-flex align-items-center p-2">
+                            <div class="d-flex align-items-center p-2" v-for="(contatto, index) in contacts">
                                 <div class="">
-                                    <img class="profilo" src="./img/avatar_1.jpg" alt="">
+                                    <img class="profilo" :src="`./img/avatar${contatto.avatar}.jpg`" alt="">
                                 </div>
                                 <div class="ms-3">
-                                    <p>Michele</p>
+                                    <p>{{contatto.name}}</p>
                                     <span> Ultimo messaggio inviato</span>
                                 </div>
                                 <div class="align-self-start flex-grow-1 text-end">
