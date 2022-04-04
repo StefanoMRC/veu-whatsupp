@@ -11,14 +11,100 @@
 </head>
 <body>
     <div id="root">
-        <div class="sfondoPrincipale">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        alngasl-g
+        <div class="sfondoPrincipale py-3">
+            <div class="container m-auto bg-white  h-100">
+                <div class="row h-100">
+                    <div class="col-4 d-flex flex-column">
+                        <!-- SEZIONE PROFILO -->
+                        <div class="d-flex justify-content-between p-3 bg-gray-custom">
+                            <div class="d-flex align-items-center">
+                                <img class="profilo me-2" src="./img/avatar_io.jpg" alt="">
+                                <span class="fs-4">Stefano</span>
+                            </div>
+                            <div class="d-flex align-items-center fs-5">
+                                <i class="fa-solid fa-circle-notch me-3"></i>
+                                <i class="fa-solid fa-message me-3"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <!-- SEZIONE NOTIFICHE -->
+                        <div class="d-flex align-items-center bg-info p-3">
+                            <div class="p-2 bg-white rounded-circle me-3">
+                                <i class="fa-solid fa-bell-slash fs-3 text-info"></i>
+                            </div>
+                            <div>
+                                <p class="">Ricevi notifiche di nuovi messaggi</p>
+                                <a class="notifiche" href="">Attiva notifiche desktop</a>
+                            </div>
+                        </div>
+                        <!-- SEZIONE CERCA -->
+                        <div class="p-2 bg-gray-custom">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-white p-2" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control p-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Cerca o inizia una nuova chat">
+                              </div>
+                        </div>
+                        <!-- SEZIONE CONTATTI -->
+                        <div class=" overflow h-100">
+                            <div class="d-flex align-items-center p-2">
+                                <div class="">
+                                    <img class="profilo" src="./img/avatar_1.jpg" alt="">
+                                </div>
+                                <div class="ms-3">
+                                    <p>Michele</p>
+                                    <span> Ultimo messaggio inviato</span>
+                                </div>
+                                <div class="align-self-start flex-grow-1 text-end">
+                                    <span>12:00</span>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
                     </div>
-                    <div class="col-8">
-                        shgudfhg
+                    <div class="col-8 d-flex flex-column justify-content-between">
+                        <!-- SEZIONE header CHAT -->
+                        <div class="d-flex justify-content-between p-3 bg-gray-custom border-start border-3">
+                            <div class="d-flex align-items-center">
+                                <img class="profilo me-2" src="./img/avatar_io.jpg" alt="">
+                                <div class="d-flex flex-column">
+                                    <span class="fs-4">Stefano</span>
+                                    <span>Ultimo accesso oggi alle 12:00s</span>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex align-items-center fs-5">
+                                <i class="fa-solid fa-circle-notch me-3"></i>
+                                <i class="fa-solid fa-message me-3"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <!-- SEZIONE CHAT VERA E PROPRIA -->
+                        <div class="d-flex flex-column chat p-3 h-100 overflow">
+                            <div class="inviato mb-2">
+                                <p>Hai portato a spasso il cane?</p>
+                            </div>
+                            <div class="inviato mb-2">
+                                <p>Ricordati di stendere i panni</p>
+                            </div>
+                            <div class="ricevuto">
+                                <p>Tutto fatto!</p>
+                            </div>
+                        </div>
+                        <!-- SEZIONE FOOTER CHAT -->
+                        <div class="d-flex align-items-center bg-gray-custom">
+                            <div class="px-3">
+                                <i class="fa-solid fa-face-smile fs-4"></i>
+                            </div>
+                            <div class="input-group p-2">
+
+                                <input type="text" class="form-control p-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Scrivi un messaggio">
+                            </div>
+                            <div class="px-3">
+                                <i class="fa-solid fa-microphone fs-4"></i>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
     
