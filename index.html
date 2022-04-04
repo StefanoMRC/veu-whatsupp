@@ -13,7 +13,7 @@
     <div id="root">
         <div class="sfondoPrincipale py-3">
             <div class="container m-auto bg-white  h-100">
-                <div class="row h-100">
+                <div class="row altezza flex-nowrap">
                     <div class="col-4 d-flex flex-column">
                         <!-- SEZIONE PROFILO -->
                         <div class="d-flex justify-content-between p-3 bg-gray-custom">
@@ -45,7 +45,7 @@
                               </div>
                         </div>
                         <!-- SEZIONE CONTATTI -->
-                        <div class=" overflow h-100">
+                        <div class=" overflow ">
                             <div class="d-flex align-items-center p-2" v-for="(contatto, index) in contacts">
                                 <div class="">
                                     <img class="profilo" :src="`./img/avatar${contatto.avatar}.jpg`" alt="">
