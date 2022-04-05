@@ -170,13 +170,32 @@ var app = new Vue(
             }
         ],
         indexVariabile:0,
+        nuovoMessaggio:"",
         
         },
         methods:{
             chat: function(index){
                 this.indexVariabile=index
                 console.log(this.indexVariabile)
-            }
+            },
+            messaggio:function(){
+                this.nuovoMessaggio
+                console.log(this.nuovoMessaggio)
+                this.contacts[this.indexVariabile].messages.push(
+                    {date : dayjs().hour()+":"+dayjs().minute(), 
+                    message:this.nuovoMessaggio, 
+                    status:'sent'})
+                    console.log(this.contacts[this.indexVariabile])
+                setTimeout(() => {
+                    this.contacts[this.indexVariabile].messages.push(
+                        {date : dayjs().hour()+":"+dayjs().minute(), 
+                        message:'ok', 
+                        status:'received'})
+                }, 2000);
+
+            },
+            
+
         }
     } 
     )

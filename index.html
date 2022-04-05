@@ -110,7 +110,11 @@
                             </div>
                             <div class="input-group p-2">
 
-                                <input type="text" class="form-control p-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Scrivi un messaggio">
+                                <input 
+                                type="text" class="form-control p-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Scrivi un messaggio"
+                                v-model='nuovoMessaggio'
+                                @keyup.enter="messaggio"
+                                >
                             </div>
                             <div class="px-3">
                                 <i class="fa-solid fa-microphone fs-4"></i>
