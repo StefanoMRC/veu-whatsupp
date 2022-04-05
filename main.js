@@ -168,7 +168,15 @@ var app = new Vue(
                     }
                 ],
             }
-        ]
+        ],
+        indexVariabile:0,
+        
+        },
+        methods:{
+            chat: function(index){
+                this.indexVariabile=index
+                console.log(this.indexVariabile)
+            }
         }
     } 
     )

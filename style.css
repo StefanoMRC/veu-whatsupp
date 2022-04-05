@@ -33,15 +33,16 @@ i{
 .inviato{
     align-self: flex-end;
     background-color: rgba(216,248,191,255);
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 5px 20px!important;
-    
+    min-width: 270px!important;
 }
 .ricevuto{
     align-self: flex-start;
     background-color:white;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 5px 20px!important; 
+    min-width: 270px!important;
 }
 .overflow{
     overflow-y: scroll;
@@ -52,4 +53,8 @@ i{
 }
 .altezza{
     max-height: 100%;
+}
+.tempo{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.411);
 }
