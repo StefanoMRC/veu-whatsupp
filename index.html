@@ -44,6 +44,7 @@
                                 <input type="text" class="form-control p-1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Cerca o inizia una nuova chat">
                               </div>
                         </div>
+                        
                         <!-- SEZIONE CONTATTI -->
                         <div class=" overflow ">
                             <div 
@@ -70,9 +71,11 @@
                         <!-- SEZIONE header CHAT -->
                         <div class="d-flex justify-content-between p-3 bg-gray-custom border-start border-3">
                             <div class="d-flex align-items-center">
-                                <img class="profilo me-2" src="./img/avatar_io.jpg" alt="">
-                                <div class="d-flex flex-column">
-                                    <span class="fs-4">Stefano</span>
+                                <img class="profilo me-2" :src="`./img/avatar${contacts[indexVariabile].avatar}.jpg`" alt="">
+                                <div class="d-flex flex-column"
+                                                                   
+                                >
+                                    <span class="fs-4">{{contacts[indexVariabile].name}}</span>
                                     <span>Ultimo accesso oggi alle 12:00s</span>
                                 </div>
                                 

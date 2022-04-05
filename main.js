@@ -171,7 +171,7 @@ var app = new Vue(
         ],
         indexVariabile:0,
         nuovoMessaggio:"",
-        
+        array:[],
         },
         methods:{
             chat: function(index){
@@ -195,6 +195,7 @@ var app = new Vue(
                 }, 2000);
 
             },
+
             
 
         }
