@@ -185,6 +185,7 @@ var app = new Vue(
                     {date : dayjs().hour()+":"+dayjs().minute(), 
                     message:this.nuovoMessaggio, 
                     status:'sent'})
+                    this.nuovoMessaggio=""
                     console.log(this.contacts[this.indexVariabile])
                 setTimeout(() => {
                     this.contacts[this.indexVariabile].messages.push(
