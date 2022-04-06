@@ -3,7 +3,9 @@
     padding: 0!important;
     box-sizing: border-box!important;
 }
-
+.altezza{
+    height: 90vh;
+}
 
 .sfondoPrincipale{
     height: 100vh;

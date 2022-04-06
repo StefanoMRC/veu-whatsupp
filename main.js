@@ -171,7 +171,7 @@ var app = new Vue(
         ],
         indexVariabile:0,
         nuovoMessaggio:"",
-        array:[],
+        ricercaContatto:"",
         },
         methods:{
             chat: function(index){
@@ -194,6 +194,15 @@ var app = new Vue(
                         status:'received'})
                 }, 2000);
 
+            },
+            ricerca:function(){
+                this.contacts.forEach(element => {
+                    if(element.name.toLowerCase().includes(this.ricercaContatto.toLowerCase())){
+                        element.visible=true
+                    }else{
+                        element.visible=false
+                    }
+                });
             },
 
             
