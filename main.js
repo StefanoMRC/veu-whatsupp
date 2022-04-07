@@ -169,14 +169,17 @@ var app = new Vue(
                 ],
             }
         ],
+        
         indexVariabile:0,
         nuovoMessaggio:"",
         ricercaContatto:"",
+        
         },
         methods:{
             chat: function(index){
                 this.indexVariabile=index
                 console.log(this.indexVariabile)
+              
             },
             messaggio:function(){
                 this.nuovoMessaggio
@@ -204,6 +207,8 @@ var app = new Vue(
                     }
                 });
             },
+
+            
 
             
 
