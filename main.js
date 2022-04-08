@@ -169,7 +169,7 @@ var app = new Vue(
                 ],
             }
         ],
-        
+        numero:0,
         indexVariabile:0,
         nuovoMessaggio:"",
         ricercaContatto:"",
@@ -207,6 +207,10 @@ var app = new Vue(
                     }
                 });
             },
+            prova:function(contatto, index){
+                
+                return contatto.messages[contatto.messages.length-1].message
+            }
 
             
 
